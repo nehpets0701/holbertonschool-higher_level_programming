@@ -15,6 +15,6 @@ if number < 0:
     if number % -10 == 0:
         print("Last digit of {:d} is 0 and is 0".format(number))
     elif number % -10 > 5:
-        print(s + "{:d} is {:d}".format(number, number % -10) + s5)
+        print(s + "{:d} is {:d}".format(number, number % -10) + s6)
     elif number % -10 < 6 and number % -10 != 0:
         print(s + "{:d} is {:d}".format(number, number % -10) + s6)

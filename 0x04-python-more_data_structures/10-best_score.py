@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    best = 0
+    best = -1000
     if len(a_dictionary) == 0 or a_dictionary is None:
         return None
 

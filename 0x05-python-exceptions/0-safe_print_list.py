@@ -1,4 +1,4 @@
-#!/usr/pin/pythpn3
+#!/usr/pin/python3
 def safe_print_list(my_list=[], x=0):
 	for y in my_list:
         try:

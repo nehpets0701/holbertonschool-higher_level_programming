@@ -3,8 +3,8 @@ def safe_print_list(my_list=[], x=0):
     printed = 0
     for y in range(x):
         try:
-            print("{:d}".format(y), end="")
-            printed++
+            print(my_list[y], end="")
+            printed = printed + 1
         except:
             break
     print("")

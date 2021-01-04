@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def safe_print_list(my_list=[], x=0):
-    for y in my_list:
+    for y in range(x):
         try:
             print("{:d}".format(y), end="")
         except:

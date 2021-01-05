@@ -1,25 +1,25 @@
 #!/usr/bin/python3
-"class"
+"class comment outside"
 
 
 class Square:
-    "class"
+    "Square class"
     def __init__(self, size=0):
-        "function"
+        "function to initialize size"
         self.__size = size
 
     def area(self):
-        "function"
+        "function to calculate area"
         return (self.__size * self.__size)
 
     @property
     def size(self):
-        "function"
+        "function to get size"
         return (self.__size)
 
     @size.setter
     def size(self, value):
-        "function"
+        "function to set size"
         if type(size) is not int:
             raise TypeError("size must be an integer")
         if size < 0:

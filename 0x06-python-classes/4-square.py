@@ -12,10 +12,12 @@ class Square:
         "function"
         return (self.__size * self.__size)
 
+    @property
     def size(self):
         "function"
         return (self.__size)
 
+    @size.setter
     def size(self, value):
         "function"
         if type(size) is not int:

@@ -2,6 +2,7 @@
 """rectangle"""
 number_of_instances = 0
 
+
 class Rectangle:
     """rectangle"""
     def __init__(self, width=0, height=0):

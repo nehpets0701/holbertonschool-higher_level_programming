@@ -78,11 +78,11 @@ class Rectangle:
             raise TypeError("rect_1 must be an instance of Rectangle")
         if type(rect_2) is not Rectangle:
             raise TypeError("rect_2 must be an instance of Rectangle")
-        if rect_1.area() > rect_2.area():
-            return rect_1
-        else:
+        if rect_2.area() > rect_1.area():
             return rect_2
+        else:
+            return rect_1
 
-def square(cls, size=0):
+    def square(cls, size=0):
         """returns a square of size size"""
         return cls(size, size)

@@ -1,0 +1,1 @@
+inheritance test cases

@@ -1,7 +1,10 @@
 #!/usr/bin/python3
+"""add attribute"""
+
+
 def add_attribute(obj, name, value):
-    for i in dir(obj):
-        if i == "__dict__":
-            setattr(obj, name, value)
-            return
-    raise TypeError("can't add new attribute")
+    """add attribute"""
+    if hasattr(obj, "__dict__") is False:
+        raise TypeError("can't add new attribute")
+    else:
+        setattr(obj, name, value)

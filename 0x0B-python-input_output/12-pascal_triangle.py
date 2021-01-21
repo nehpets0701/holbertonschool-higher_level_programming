@@ -4,6 +4,9 @@
 
 def pascal_triangle(n):
     """function"""
+    if n <= 0:
+        return []
+
     row = [1]
     y = [0]
     for x in range(n):

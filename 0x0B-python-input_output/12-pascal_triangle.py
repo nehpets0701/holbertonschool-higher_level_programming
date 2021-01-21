@@ -9,7 +9,8 @@ def pascal_triangle(n):
 
     row = [1]
     y = [0]
-    for x in range(n):
-        print(row)
+    triangle = [[1]]
+    for x in range(n - 1):
         row = [left+right for left, right in zip(row + y, y + row)]
-    return n >= 1
+        triangle.append(row)
+    return triangle

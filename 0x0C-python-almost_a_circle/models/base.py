@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-"""Base Class"""
+"""Base Class that will later be inherited by rectangle"""
 import json
 
 
 class Base:
-    """Base Class"""
+    """Base Class that will later be inherited by rectangle"""
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """init function"""
+        """init function for base class"""
         if id is not None:
             self.id = id
         else:
@@ -33,7 +33,7 @@ class Base:
             file.write(cls.to_json_string(output))
 
     def from_json_string(json_string):
-        """json to dictionary"""
+        """json string to dictionary"""
         if type(json_string) is not str and json_string is not None:
             raise TypeError("must be a string")
         if json_string is None or len(json_string) == 0:

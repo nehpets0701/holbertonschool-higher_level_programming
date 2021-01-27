@@ -74,7 +74,7 @@ class Rectangle(Base):
         return self.width * self.height
 
     def display(self):
-        """prints rectangle"""
+        """prints rectangle as string"""
         for i in range(self.y):
             print()
         for i in range(self.height):
@@ -90,7 +90,7 @@ class Rectangle(Base):
         return string.format(self.id, self.x, self.y, self.width, self.height)
 
     def update(self, *args, **kwargs):
-        """updates attributes"""
+        """updates attributes of rectangle"""
         attributes = ["id", "width", "height", "x", "y"]
         if len(args) == 0:
             for key, value in kwargs.items():
@@ -101,6 +101,6 @@ class Rectangle(Base):
             setattr(self, attributes[index], args[index])
 
     def to_dictionary(self):
-        """returns rectangle"""
+        """returns rectangle as dictionary"""
         return {'x': self.x, 'y': self.y, 'id': self.id,
                 'height': self.height, 'width': self.width}

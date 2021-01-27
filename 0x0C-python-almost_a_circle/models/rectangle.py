@@ -3,16 +3,6 @@
 from models.base import Base
 
 
-def raise_exc(attribute="", error=""):
-    if error == "Type":
-        raise TypeError("{} must be an integer".format(attribute))
-    elif error == "Value":
-        if attribute == "x" or attribute == "y":
-            raise ValueError("{} must be >= 0".format(attribute))
-        else:
-            raise ValueError("{} must be > 0".format(attribute))
-
-
 class Rectangle(Base):
     """rectangle - inherits from base"""
     def __init__(self, width, height, x=0, y=0, id=None):

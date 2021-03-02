@@ -1,4 +1,6 @@
 -- cities
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
+-- comments
 USE hbtn_0d_usa;
+-- comments
 CREATE TABLE IF NOT EXISTS cities (id INT UNIQUE PRIMARY KEY NOT NULL AUTO_INCREMENT, FOREIGN KEY (state_id) REFERENCES states(id), name VARCHAR(256) NOT NULL);

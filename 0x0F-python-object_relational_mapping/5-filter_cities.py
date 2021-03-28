@@ -14,5 +14,7 @@ if __name__ == "__main__":
             if len(rows) - 1 > x:
                 print(rows[x][0], end=", ")
         print(rows[x][0])
+    else:
+        print()
     c.close()
     db.close()

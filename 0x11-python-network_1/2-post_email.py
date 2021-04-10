@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+"""email"""
+import urllib.request
+import urllib.parse
+from sys import argv
+
+if __name__ == "__main__":
+    url = argv[1]
+    email = {"email": argv[2]}
+
+    data = urllib.parse.urlencode(email)
+    data = data.encode("ascii")
+    r = urllib.request.Request(url, data)
+    with urllib.request.urlopen(r) as response:
+        print(response.read().decode("utf-8"))

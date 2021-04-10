@@ -11,7 +11,7 @@ if __name__ == "__main__":
         obj = {"q": q}
         try:
             r = requests.post(url, data=obj).json()
-            if r.get("id") is not None and req.get("name") is not None:
+            if r.get("id") is not None and r.get("name") is not None:
                 print("["+str(r.get('id'))+"] "+str(r.get("name")))
             else:
                 print("No result")
